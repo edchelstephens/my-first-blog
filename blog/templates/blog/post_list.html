@@ -7,11 +7,20 @@
 <body>
     <div>
         <h1><a href="https://facebook.com/edchelstephens">Dodot</a></h1>
-        <p>Welcome to Django Dot! Here we go!</p>
+        <h2>Welcome to Django Dot! Here we go!</h2>
+        <h3>Let's Start</h3>
     </div>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
     <div>
         <h2><a href="https://www.facebook.com/joyxty">His Chubs</a></h2>
-        <p>This is for you ms chuchubs</p>
+        <h2>This is for you ms chuchubs</h2>
+        <h3>End</h3>
     </div>
 
 </body>
