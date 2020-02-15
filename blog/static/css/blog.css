@@ -57,3 +57,11 @@ h1, h2, h3, h4{
 a.logout-link{
     color:#FFF;
 }
+
+.comment{
+    margin: 20px 0 20px 20px;
+}
+
+hr{
+    border-color:#0d98ba;
+}
